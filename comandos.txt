@@ -1,0 +1,5 @@
+// criar module usando CLI no nest
+nest g module <nome_do_module> // o g significa generate, depois criar controller e service tbm
+
+// criar o endpoint completo com CRUD
+nest g resource <nome_do_module>
