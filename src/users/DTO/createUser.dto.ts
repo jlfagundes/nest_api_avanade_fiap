@@ -9,8 +9,8 @@ import {
 
 /* eslint-disable prettier/prettier */
 export class CreateUserDTO {
-    @IsString()
-    @IsNotEmpty()
+  @IsString()
+  @IsNotEmpty()
   name: string;
 
   @IsEmail()

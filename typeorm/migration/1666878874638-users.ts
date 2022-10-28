@@ -9,7 +9,7 @@ export class users1666878874638 implements MigrationInterface {
         name: 'users',
         columns: [
           idColumn('id'),
-          varcharColumn('nome', '100', false),
+          varcharColumn('name', '100', false),
           varcharColumn('email', '255', false),
           varcharColumn('password', '64', false),
         ],

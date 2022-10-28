@@ -18,8 +18,8 @@ export class UsersController {
   // Criar
   @Post()
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  create(@Body() _req: CreateUserDTO) {
-    return this.usersService.create();
+  create(@Body() req: CreateUserDTO) {
+    return this.usersService.create(req);
   }
 
   // Listar todos
