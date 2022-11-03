@@ -5,6 +5,7 @@ import {
   Get,
   Param,
   ParseUUIDPipe,
+  ParseIntPipe,
   Patch,
 } from '@nestjs/common';
 import { CreateUserDTO } from './DTO/createUser.DTO';
@@ -37,7 +38,8 @@ export class UsersController {
 
   // Atualizar
   @Patch()
-  update(@Param('id', ParseUUIDPipe) id: number, @Body() req: UpdateUserDTO) {
+  // update(@Param('id', ParseUUIDPipe) id: number, @Body() req: UpdateUserDTO) {
+  update(@Param('id', ParseIntPipe) id: number, @Body() req: UpdateUserDTO) {
     return this.usersService.update(id, req);
   }
 
